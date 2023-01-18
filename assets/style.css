@@ -4,6 +4,7 @@
 	--font-open-sans: "Open Sans", sans-serif;
 	--font-poppins: "Poppins", sans-serif;
 	--background--color: #684bb1;
+	--text-color: #FFFFFF;
 }
 
 .page {
@@ -13,3 +14,64 @@
 	background-size: contain;
 	background-color: var(--background--color);
 }
+
+.logo{
+	margin: 2.5rem 0 4.375rem 2.5rem;
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 150px;
+}
+
+.content__image{
+	object-fit: contain;
+}
+
+.content__title{
+	display: none;
+}
+
+.content__text{
+	text-align: center;
+	font-family: var(--font-open-sans);
+	color: var(--text-color);
+	padding: 0 2.25rem;
+	line-height: 1.5;
+}
+
+.content__info{
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin-bottom: 4rem;
+	align-items: center;
+}
+.content__btn{
+	width: 200px;
+	padding: .75rem 4.75rem;
+	background-color: var(--text-color);
+	border: 1px solid var(--text-color) ;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+	border-radius: 20px;
+	font-family: var(--font-poppins);
+	font-size: .75rem;
+}
+
+.rodape{
+	display: flex;
+	justify-content: center;
+	gap: .75rem;
+}
+
+.rodape__logo{
+	width: 28px;
+	height: auto;
+}
+
+/* 
+a img{
+	filter: brightness(0) saturate(100%) invert(50%) sepia(14%) saturate(6225%) hue-rotate(294deg) brightness(102%) contrast(101%);
+} */
