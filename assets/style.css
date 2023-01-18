@@ -59,6 +59,7 @@
 	border-radius: 20px;
 	font-family: var(--font-poppins);
 	font-size: .75rem;
+	color: var(--background--color);
 }
 
 .rodape{
