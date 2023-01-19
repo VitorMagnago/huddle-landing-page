@@ -4,8 +4,8 @@
 	--font-open-sans: "Open Sans", sans-serif;
 	--font-poppins: "Poppins", sans-serif;
 	--background--color: #684bb1;
-	--text-color: #FFFFFF;
-	--btn-hover-color: #E880E8;
+	--text-color: #ffffff;
+	--btn-hover-color: #e880e8;
 }
 
 .page {
@@ -16,26 +16,26 @@
 	background-color: var(--background--color);
 }
 
-.logo{
+.logo {
 	margin: 2.5rem 0 4.375rem 2.5rem;
 }
 
-.content{
+.content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 150px;
 }
 
-.content__image{
+.content__image {
 	object-fit: contain;
 }
 
-.content__title{
+.content__title {
 	display: none;
 }
 
-.content__text{
+.content__text {
 	text-align: center;
 	font-family: var(--font-open-sans);
 	color: var(--text-color);
@@ -43,124 +43,117 @@
 	line-height: 1.5;
 }
 
-.content__info{
+.content__info {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
 	margin-bottom: 4rem;
 	align-items: center;
 }
-.content__btn{
-	width: 200px;
-	padding: .75rem 4.75rem;
+.content__btn {
+	padding: 0.75rem 4.75rem;
 	background-color: var(--text-color);
-	border: 1px solid var(--text-color) ;
+	border: 1px solid var(--text-color);
 	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
 	border-radius: 20px;
 	font-family: var(--font-poppins);
-	font-size: .75rem;
+	font-size: 0.75rem;
 	color: var(--background--color);
 }
 
-.rodape{
+.rodape {
 	display: flex;
 	justify-content: center;
-	gap: .75rem;
+	gap: 0.75rem;
 }
 
-.rodape__logo{
+.rodape__logo {
 	width: 28px;
 	height: auto;
 }
 
-
 /* intermediary layout */
-@media(min-width: 460px){
+@media (min-width: 460px) {
+	.page {
+		background-image: url(../images/bg-desktop.svg);
+		overflow: hidden;
+		background-size: cover;
+	}
 
-.page {
-	background-image: url(../images/bg-desktop.svg);
-	overflow: hidden;
-	background-size: cover;
-}
+	.logo {
+		margin: 2.5rem 0 3rem 2.5rem;
+	}
 
-.logo{
-	margin: 2.5rem 0 3rem 2.5rem;
-}
+	.content {
+		flex-direction: row;
+		gap: 60px;
+		margin: 0 16px 16px 16px;
+	}
 
+	.content__info {
+		width: 520px;
+		margin-bottom: 2rem;
+	}
 
-.content{
-	flex-direction: row ;
-	gap: 60px;
-	margin: 0 16px 16px 16px;
-}
+	.content__title {
+		display: inline;
+		font-family: var(--font-poppins);
+		font-size: 2.5rem;
+		font-weight: 600;
+		line-height: 1.5;
+		color: var(--text-color);
+	}
 
-.content__info{
-	width: 520px;
-	margin-bottom: 2rem;
-}
+	.content__text {
+		text-align: left;
+		padding: 0;
+		font-size: 1.125rem;
+	}
 
-.content__title{
-	display: inline;
-	font-family: var(--font-poppins);
-	font-size: 2.5rem;
-	font-weight: 600;
-	line-height: 1.5;
-	color: var(--text-color);
-}
+	.content__btn {
+		padding: 1rem 4rem;
+		font-size: 1.125rem;
+		align-self: flex-start;
+	}
 
+	.content__btn:hover {
+		background-color: var(--btn-hover-color);
+		color: var(--text-color);
+		border: 1px solid var(--btn-hover-color);
+	}
 
-.content__text{
-	text-align: left;
-	padding: 0;
-	font-size: 1.125rem;
-}
+	.rodape {
+		justify-content: flex-end;
+		margin-right: 5rem;
+		border-radius: 1.75rem;
+	}
 
-.content__btn{
-	padding: 1rem 4rem;
-	font-size: 1.125rem;
-	align-self: flex-start;
-}
+	.rodape__logo {
+		width: 40px;
+	}
 
-.content__btn:hover{
-	background-color: var(--btn-hover-color);
-	color: var(--text-color);
-	border: 1px solid var(--btn-hover-color);
-}
-
-.rodape{
-	justify-content: flex-end;
-	margin-right: 5rem;
-	border-radius: 1.75rem;
-}
-
-.rodape__logo{
-	width: 40px;
-}
-
-.rodape__logo:hover{
-	filter: brightness(0) saturate(100%) invert(50%) sepia(14%) saturate(6225%) hue-rotate(294deg) brightness(102%) contrast(101%);
-}
-
+	.rodape__logo:hover {
+		filter: brightness(0) saturate(100%) invert(50%) sepia(14%) saturate(6225%)
+			hue-rotate(294deg) brightness(102%) contrast(101%);
+	}
 }
 
 /* desktop */
 
-@media(min-width: 1300px){
+@media (min-width: 1300px) {
+	.page {
+		background-size: contain;
+	}
 
-.page{
-	background-size: contain;
-}
+	.logo {
+		margin: 4rem 0 6.5rem 5rem;
+	}
 
-.logo{
-	margin: 4rem 0 6.5rem 5rem;
-}
+	.content {
+		margin: 0 5rem 1.6875rem 5rem;
+	}
 
-.content{
-	margin: 0 5rem 1.6875rem 5rem;
-}
-
-.content__info{
-	margin-bottom: 4rem;
-}
-
+	.content__info {
+		margin-bottom: 4rem;
+	}
 }
